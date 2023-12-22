@@ -25,7 +25,7 @@ namespace DesignPattern_ChainOfResponsibility.ChainOfResponsibility
                 customerProcess.Amount = req.Amount;
                 customerProcess.Name = req.Name;
                 customerProcess.EmployeeName = "Şube Müdürü İpek Çelik";
-                customerProcess.Description = "Müşterinin talep ettiği kredi tutarı tarafımca ödenemediği için işlem şube müdürüne aktarılmıştır.";
+                customerProcess.Description = "Müşterinin talep ettiği kredi tutarı tarafımca ödenemediği için işlem bölge müdürüne aktarılmıştır.";
                 context.CustomerProcesses.Add(customerProcess);
                 context.SaveChanges();
                 NextApprover.ProcessRequest(req);
