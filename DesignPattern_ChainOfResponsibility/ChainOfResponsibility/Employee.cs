@@ -1,4 +1,7 @@
-﻿namespace DesignPattern_ChainOfResponsibility.ChainOfResponsibility
+﻿using DesignPattern_ChainOfResponsibility.Models;
+
+
+namespace DesignPattern_ChainOfResponsibility.ChainOfResponsibility
 {
     public abstract class Employee
     {
@@ -7,6 +10,6 @@
         {
             this.NextApprover = supervisor;
         }
-        public abstract void ProcessRequest();
+        public abstract void ProcessRequest(CustomerProcessViewModel req);
     }
 }
